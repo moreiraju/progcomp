@@ -1,0 +1,39 @@
+body {
+    /* fonte do texto */
+    font-family: Arila, sans-serif;
+    background-color: rgb(162, 211, 248);
+    /* usa modelo FlexBox, conceito de caixa para posicionamento */
+    display: flex;
+    justify-content: center; /* centraliza na horizontal*/
+    height: 100vh; /* altura da página 100% do tamanho da página */
+    align-items: center; /* centraliza na vertical */
+}
+.container { /* pode ser usada para mais de um elemento de marcação */
+    background-color: white;
+    padding: 20px; /* espaçamento interno */
+    border-radius: 10px; /* borda */
+    text-align: center; /* texto centralizado */
+    box-shadow: 0 4px 8px; /* sombra */
+}
+button{
+    background-color: rgb(55, 89, 191);
+    color: beige;
+    border: none;
+    border-radius: 3px;
+    /*10 abaixo e acima e 20 esquerda e direita*/
+    padding: 7px 10px;
+}
+/* ao passar o mouse por cima do botão */
+button:hover{
+    background-color: rgb(95, 144, 240);
+}
+.foto{
+    /* borda com cantos arredondados */
+    border-radius: 50%;
+    /* largura */
+    width: 100px;
+    /*altura */
+    height: 100px;
+    /*espaçamento externo abaixo */
+    margin-bottom: 10px;
+}
