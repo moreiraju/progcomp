@@ -27,7 +27,47 @@ nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 18px;
+    font-size: 20px;
     background-color:rgb(25, 132, 189);
     border-radius: 8px;
+    margin: 9px;
 }
+nav a:hover {
+    background-color: rgb(21, 94, 134);
+}
+img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: rgb(21, 94, 134);
+    text-align: justify;
+}
+/* referenciar id # */
+/* referenciar class . */
+
+h2 {
+    text-align: center;
+}
+
+h4 {
+    width: 70%;
+}
+
+.finalidade {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+
+/*.introducao{
+    text-align: justify;
+}*/
