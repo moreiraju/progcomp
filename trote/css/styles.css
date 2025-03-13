@@ -2,72 +2,136 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(166, 204, 237);
+    background-color: #f4f3ee;
     text-align: center;
 }
 header {
-    background: #2d7a4f;
+    background: #000000;
     color: white;
-    padding: 15px 0; /* espaçamento interno 15px acima e abaixo, e 0px esquerda e direita*/
+    padding: 20px; /* espaçamento interno 15px acima e abaixo, e 0px esquerda e direita*/
     font-size: 24px;
+    text-align: left;
+    position: relative;
+    z-index: 1;
 }
 nav {
-    background-color: rgb(40, 174, 246);
+    background-color: #0060f5;
     padding: 10px;
     display: flex; /* Flex Boxing */
     justify-content: space-between; /* alinhamento na horizontal */
     align-items: center; /* alinhamento na vertical */
+    position: relative;
+    z-index: 1;
 }
 #links-menu {
     display: flex;
     gap: 20px;
+}
+#trote-img {
+    position: absolute;
+    top: 2%; /* Ajuste fino para sobreposição */
+    right: 0; /* Alinha no canto direito */
+    max-width: 200px; 
+    height: auto;
+    z-index: 2; /* Mantém abaixo do texto */
+}
+img {
+    width: 8%;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px;
 }
 /* configura o estilo das âncoras que estão dentro do nav */
 nav a {
     color: white;
     text-decoration: none;
     padding: 10px 15px;
-    font-size: 20px;
-    background-color:rgb(25, 132, 189);
+    font-size: 18px;
+    background-color:#0391cd;
     border-radius: 8px;
-    margin: 9px;
+    margin: 7px;
+    font-weight: bold;
 }
 nav a:hover {
-    background-color: rgb(21, 94, 134);
+    background-color: #fbb304;
 }
-img {
-    width: 100px;
-    height: auto;
-    margin-right: 20px;
-    border-radius: 10px;
-}
-
 .container {
     width: 80%;
-    margin: 20px auto;
+    margin: 15px auto;
     background-color: white;
-    padding: 20px;
+    padding: 15px;
+    padding-top: 0px;
+    padding-bottom: 5px;
     border-radius: 10px;
-    border-color: rgb(21, 94, 134);
     text-align: justify;
+    border: 2px solid #0391cd;
 }
 /* referenciar id # */
 /* referenciar class . */
-
 h2 {
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+}
+.center p {
+    text-align: center;
+}
+.finalidades {
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #f4f3ee;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+.finalidades h4 {
+    text-align: justify;
+    margin: 10px 0;
+}
+
+.finalidades h5 {
+    text-align: justify;
+    margin: 10px 20px;
+    font-size: 90%;
+}
+
+p {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 3px;
+    border-radius: 5px;
+}
+/* Centralizar o h2 apenas na página inicial */
+.pagina-inicial h2 {
     text-align: center;
 }
 
-h4 {
-    width: 70%;
+/* Nas outras páginas, o título começa à esquerda */
+section h2 {
+    text-align: left;
 }
 
-.finalidade {
-    width: 70%;
-    justify-content: center;
-    align-items: center;
+.caixas {
+    width: 45%;
+    margin: 2px auto;
+    padding: 15px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #f4f3ee;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.caixas-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os itens */
 }
 
-/*.introducao{
-    text-align: justify;
-}*/
+@media (max-width: 768px) {
+    #trote-img {
+        max-width: 120px;
+    }
+}
