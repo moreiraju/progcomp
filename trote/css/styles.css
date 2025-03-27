@@ -106,6 +106,7 @@ p {
     padding: 3px;
     border-radius: 5px;
 }
+
 /* Centralizar o h2 apenas na página inicial */
 .pagina-inicial h2 {
     text-align: center;
@@ -134,11 +135,17 @@ section h2 {
 }
 
 table {
-    width: 85%;
+    width: 80%;
     border-collapse: collapse;
-    margin: 20px 7.5%;
+    margin: 0 auto;
 }
 
+/*Para o td que esta dentro do tr que esta dentro da table*/
+table tr td{
+    padding: 2%;
+}
+
+/*td que esta dentro do th*/
 th, td {
     border: 1px solid black;
     padding: 8px;
@@ -149,6 +156,8 @@ th, td {
 th {
     background-color: #0391cd;
 }
+
+
 
 .pontuacao {
     width: 100%;
@@ -161,6 +170,37 @@ th {
     justify-content: space-between;
     border-bottom: 1px dashed black;
     padding: 5px 0;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.laranja{
+    background-color: #fcca6d;
+}
+
+.preto{
+    background-color: #2a2a2a;
+    color: white;
+}
+
+.roxa {
+    background-color: #b88af2;
+}
+
+.verde {
+    background-color: #7fc8a9;
+}
+
+.vermelha {
+    background-color: #e57373;
+}
+
+.campos{
+    padding: 20px;
 }
 
 
