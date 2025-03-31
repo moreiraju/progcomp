@@ -28,16 +28,70 @@
                 <h2> Calculadoras de Pontuação</h2>
                 <form><!-- formulário para entrada de dados do usuário -->
                     <div class="campos">
-                        <label> Ação Social </label>
+                        <label> Selhecione a cor da equipe</label>
+                        <select id="equipe">
+                            <option values="Laranja"> Laranja </option>
+                            <option values="Preta"> Preta </option>
+                            <option values="Roxa"> Roxa </option>
+                            <option values="Verde"> Verde </option>
+                            <option values="Vermelha"> Vermelha </option>
+                        </select>
+                    </div>
+                    <div class="campos">
+                        <label> Ação Social (pts) </label>
                         <input type="number" id="acaoSocial"/>
                     </div>
                     <div class="campos">
-                        <label> Homanagem </label>
+                        <label> Homanagem (pts)</label>
                         <input type="number" id="homenagem" />
                     </div>
                     <div class="campos">
+                        <label> Caixas de Leite (litros) </label>
+                        <input type="number" id="leite" />
+                    </div>
+                    <div class="campos">
+                        <label>Kit Alimentação</label>
+                            <input type="number" id="kitAlimentacao"/>
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Lata de Suplemento</label>
+                        <input type="number" id="suplemento" />
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Pacote de Arroz 5kg</label>
+                        <input type="number" id="arroz" />
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Pacote de Arroz 1kg</label>
+                        <input type="number" id="arroz1" />
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Pacote de Feijão 2kg</label>
+                        <input type="number" id="feijao2" />
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Pacote de Feijão 1kg</label>
+                        <input type="number" id="feijao1" />
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Pacote de Macarrão 400/500g</label>
+                        <input type="number" id="macarrao" />
+                        </label>
+                    </div>
+                    <div class="campos">
+                        <label>Óleo 900ml</label>
+                        <input type="number" id="oleo" />
+                        </label>
+                    </div>
+                    <div class="campos">
                         <button type="button" onclick="calcular()"> Calcular </button>
-                        <label id="resposta"> </label>
+                        <label id="soma"> </label>
                     </div>
 
                 </form>
