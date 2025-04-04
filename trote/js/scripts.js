@@ -15,105 +15,89 @@ function calcular(){
 
     //recupera o valor digitado kitAlimentacao
     let kitAlimentacao = Number(document.getElementById("kitAlimentacao").value)
+    //recupera o valor digitado
+    let suplemento = Number(document.getElementById("suplemento").value)
     
     //recupera a cor da equipe
     let equipe = document.getElementById("equipe").value
-    let pontosKit = 0 //guarda a pontuacao por kit
+    let pontosKitSupl = 0 //guarda a pontuacao por kit
     if (equipe == "Laranja"){
         // equipe Laranja
-        if(kitAlimentacao >= 97){
-            pontosKit = 5000 + ((kitAlimentacao - 97) * 30)
+        if(kitAlimentacao >= 97 && suplemento >= 49){
+            pontosKitSupl = 5000 + ((kitAlimentacao - 97) * 30) + ((suplemento - 49) * 15)
         }
-        else if(kitAlimentacao >= 78){
-            pontosKit = 400 + ((kitAlimentacao - 78) * 30)
+        else if(kitAlimentacao >= 78 && suplemento >= 39){
+            pontosKitSupl = 400 + ((kitAlimentacao - 78) * 30) + ((suplemento - 39) * 15)
         }
-        else if(kitAlimentacao >= 49){
-            pontosKit = 2500 + ((kitAlimentacao - 49) * 30)
+        else if(kitAlimentacao >= 49 && suplemento >= 25){
+            pontosKitSupl = 2500 + ((kitAlimentacao - 49) * 30) + ((suplemento - 25) * 15)
         }
-        else if(kitAlimentacao >= 19){
-            pontosKit = 1000 + ((kitAlimentacao - 19) * 30)
-        }
-        else{
-            pontosKit= soma + (kitAlimentacao * 30)
+        else if(kitAlimentacao >= 19 && suplemento >= 10){
+            pontosKitSupl = 1000 + ((kitAlimentacao - 19) * 30) + ((suplemento - 10) * 15)
         }
     }
     if (equipe == "Preta"){
         // equipe Laranja
-        if(kitAlimentacao >= 103){
-            pontosKit = 5000 + ((kitAlimentacao - 103) * 30)
+        if(kitAlimentacao >= 103 && suplemento >= 52){
+            pontosKitSupl = 5000 + ((kitAlimentacao - 103) * 30) + ((suplemento - 52) * 15)
         }
-        else if(kitAlimentacao >= 82){
-            pontosKit = 400 + ((kitAlimentacao - 82) * 30)
+        else if(kitAlimentacao >= 82 && suplemento >= 42){
+            pontosKitSupl = 400 + ((kitAlimentacao - 82) * 30) + ((suplemento - 42) * 15)
         }
-        else if(kitAlimentacao >= 52){
-            pontosKit = 2500 + ((kitAlimentacao - 52) * 30)
+        else if(kitAlimentacao >= 52 && suplemento >= 26){
+            pontosKitSupl = 2500 + ((kitAlimentacao - 52) * 30) + ((suplemento - 26) * 15)
         }
-        else if(kitAlimentacao >= 21){
-            pontosKit = 1000 + ((kitAlimentacao - 21) * 30)
-        }
-        else{
-            pontosKit= soma + (kitAlimentacao * 30)
+        else if(kitAlimentacao >= 21 && suplemento >= 10){
+            pontosKitSupl = 1000 + ((kitAlimentacao - 21) * 30) + ((suplemento - 10) * 15)
         }
     }
     if (equipe == "Roxa"){
         // equipe Laranja
-        if(kitAlimentacao >= 102){
-            pontosKit = 5000 + ((kitAlimentacao - 102) * 30)
+        if(kitAlimentacao >= 102 && suplemento >= 51){
+            pontosKitSupl = 5000 + ((kitAlimentacao - 102) * 30) + ((suplemento - 51) * 15)
         }
-        else if(kitAlimentacao >= 82){
-            pontosKit = 400 + ((kitAlimentacao - 82) * 30)
+        else if(kitAlimentacao >= 82 && suplemento >= 41){
+            pontosKitSupl = 400 + ((kitAlimentacao - 82) * 30) + ((suplemento - 41) * 15)
         }
-        else if(kitAlimentacao >= 51){
-            pontosKit = 2500 + ((kitAlimentacao - 51) * 30)
+        else if(kitAlimentacao >= 51 && suplemento >= 26){
+            pontosKitSupl = 2500 + ((kitAlimentacao - 51) * 30)+ ((suplemento - 26) * 15)
         }
-        else if(kitAlimentacao >= 20){
-            pontosKit = 1000 + ((kitAlimentacao - 20) * 30)
-        }
-        else{
-            pontosKit= soma + (kitAlimentacao * 30)
+        else if(kitAlimentacao >= 20 && suplemento >= 10){
+            pontosKitSupl = 1000 + ((kitAlimentacao - 20) * 30)+ ((suplemento - 10) * 15)
         }
     }
     if (equipe == "Verde"){
         // equipe Laranja
-        if(kitAlimentacao >= 88){
-            pontosKit = 5000 + ((kitAlimentacao - 88) * 30)
+        if(kitAlimentacao >= 88 && suplemento >= 44){
+            pontosKitSupl = 5000 + ((kitAlimentacao - 88) * 30) + ((suplemento - 44) * 15)
         }
-        else if(kitAlimentacao >= 70){
-            pontosKit = 400 + ((kitAlimentacao - 70) * 30)
+        else if(kitAlimentacao >= 70 && suplemento >= 35){
+            pontosKitSupl = 400 + ((kitAlimentacao - 70) * 30) + ((suplemento - 35) * 15)
         }
-        else if(kitAlimentacao >= 44){
-            pontosKit = 2500 + ((kitAlimentacao - 44) * 30)
+        else if(kitAlimentacao >= 44 && suplemento >= 22){
+            pontosKitSupl = 2500 + ((kitAlimentacao - 44) * 30) + ((suplemento - 22) * 15)
         }
-        else if(kitAlimentacao >= 18){
-            pontosKit = 1000 + ((kitAlimentacao - 18) * 30)
-        }
-        else{
-            pontosKit= soma + (kitAlimentacao * 30)
+        else if(kitAlimentacao >= 18 && suplemento >= 9){
+            pontosKitSupl = 1000 + ((kitAlimentacao - 18) * 30) + ((suplemento - 9) * 15)
         }
     }
     if (equipe == "Vermelha"){
         // equipe Laranja
-        if(kitAlimentacao >= 93){
-            pontosKit = 5000 + ((kitAlimentacao - 93) * 30)
+        if(kitAlimentacao >= 93 && suplemento >= 47){
+            pontosKitSupl = 5000 + ((kitAlimentacao - 93) * 30) + ((suplemento - 47) * 15)
         }
-        else if(kitAlimentacao >= 74){
-            pontosKit = 400 + ((kitAlimentacao - 74) * 30)
+        else if(kitAlimentacao >= 74 && suplemento >= 38){
+            pontosKitSupl = 400 + ((kitAlimentacao - 74) * 30) + ((suplemento - 38) * 15)
         }
-        else if(kitAlimentacao >= 47){
-            pontosKit = 2500 + ((kitAlimentacao - 47) * 30)
+        else if(kitAlimentacao >= 47 && suplemento >= 24){
+            pontosKitSupl = 2500 + ((kitAlimentacao - 47) * 30) + ((suplemento - 24) * 15)
         }
-        else if(kitAlimentacao >= 19){
-            pontosKit = 1000 + ((kitAlimentacao - 19) * 30)
-        }
-        else{
-            pontosKit= soma + (kitAlimentacao * 30)
+        else if(kitAlimentacao >= 19 && suplemento >= 9){
+            pontosKitSupl = 1000 + ((kitAlimentacao - 19) * 30)+ ((suplemento - 9) * 15)
         }
     }
-    soma = soma + pontosKit
+    soma = soma + pontosKitSupl
 
-    //recupera o valor digitado
-    let suplemento = document.getElementById("suplemento").value
-    soma = soma + (15 * Number(suplemento))
 
     //recupera o valor digitado
     let arroz = document.getElementById("arroz").value
