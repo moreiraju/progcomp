@@ -119,19 +119,16 @@ section h2 {
 
 .caixas {
     width: 45%;
-    margin: 2px auto;
     padding: 15px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: #f4f3ee;
     padding-top: 0px;
     padding-bottom: 0px;
+
 }
 
 .caixas-container {
     display: flex;
     justify-content: space-between;
-    gap: 20px; /* Espaçamento entre os itens */
+    gap: 10%; /* Espaçamento entre os itens */
 }
 
 table {
@@ -202,6 +199,7 @@ th {
 .campos{
     padding-bottom: 30px;
 }
+
 
 
 @media (max-width: 768px) {

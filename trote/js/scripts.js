@@ -37,7 +37,6 @@ function calcular(){
         }
     }
     if (equipe == "Preta"){
-        // equipe Laranja
         if(kitAlimentacao >= 103 && suplemento >= 52){
             pontosKitSupl = 5000 + ((kitAlimentacao - 103) * 30) + ((suplemento - 52) * 15)
         }
@@ -51,8 +50,7 @@ function calcular(){
             pontosKitSupl = 1000 + ((kitAlimentacao - 21) * 30) + ((suplemento - 10) * 15)
         }
     }
-    if (equipe == "Roxa"){
-        // equipe Laranja
+    else if (equipe == "Roxa"){
         if(kitAlimentacao >= 102 && suplemento >= 51){
             pontosKitSupl = 5000 + ((kitAlimentacao - 102) * 30) + ((suplemento - 51) * 15)
         }
@@ -66,8 +64,7 @@ function calcular(){
             pontosKitSupl = 1000 + ((kitAlimentacao - 20) * 30)+ ((suplemento - 10) * 15)
         }
     }
-    if (equipe == "Verde"){
-        // equipe Laranja
+    else if (equipe == "Verde"){
         if(kitAlimentacao >= 88 && suplemento >= 44){
             pontosKitSupl = 5000 + ((kitAlimentacao - 88) * 30) + ((suplemento - 44) * 15)
         }
@@ -81,8 +78,7 @@ function calcular(){
             pontosKitSupl = 1000 + ((kitAlimentacao - 18) * 30) + ((suplemento - 9) * 15)
         }
     }
-    if (equipe == "Vermelha"){
-        // equipe Laranja
+    else {
         if(kitAlimentacao >= 93 && suplemento >= 47){
             pontosKitSupl = 5000 + ((kitAlimentacao - 93) * 30) + ((suplemento - 47) * 15)
         }
@@ -97,6 +93,48 @@ function calcular(){
         }
     }
     soma = soma + pontosKitSupl
+
+    let sangue = Number(document.getElementById("sangue").value)
+    if (equipe == "Laranja"){
+        if(sangue >= 49){
+            soma = soma + 2500 + ((sangue - 49) * 20)
+        }
+        else if(sangue < 49){
+            soma = soma + (sangue * 20)
+        }
+    }
+    else if(equipe == "Preta"){
+        if(sangue >= 52){
+            soma = soma + 2500 + ((sangue - 49) * 20)
+        }
+        else if(sangue < 52){
+            soma = soma + (sangue * 20)
+        }
+    }
+    else if (equipe == "Roxa"){
+        if(sangue >= 51){
+            soma = soma + 2500 + ((sangue - 49) * 20)
+        }
+        else if(sangue < 51){
+            soma = soma + (sangue * 20)
+        }
+    }
+    else if (equipe == "Verde"){
+        if(sangue >= 44){
+            soma = soma + 2500 + ((sangue - 49) * 20)
+        }
+        else if(sangue < 44){
+            soma = soma + (sangue * 20)
+        }
+    }
+    else{
+        if(sangue >= 47){
+            soma = soma + 2500 + ((sangue - 49) * 20)
+        }
+        else if(sangue < 47){
+            soma = soma + (sangue * 20)
+        }
+    }
 
 
     //recupera o valor digitado
@@ -123,6 +161,20 @@ function calcular(){
     let oleo = document.getElementById("oleo").value
     soma = soma + Number(oleo)
 
+    let mascote = document.getElementById("mascote").value
+    soma = soma + Number(mascote)
+
+    let caracterizacao = document.getElementById("caracterizacao").value
+    soma = soma + Number(caracterizacao)
+
+    let audiovisual = document.getElementById("audiovisual").value
+    soma = soma + Number(audiovisual)
+
+    let atividades = document.getElementById("atividades").value
+    soma = soma + Number(atividades)
+
     //devolve o resultado para o html
     document.getElementById("soma").innerHTML = soma.toFixed(2)
+
+    
 }
