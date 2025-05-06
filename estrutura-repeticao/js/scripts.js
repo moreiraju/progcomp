@@ -9,7 +9,7 @@ function exe0(){
     }
     let media = soma/6
     alert(`A média das notas é ${media.toFixed(1)}`)
-    
+
     /*
     let nota1 = Number(prompt('Informe a nota 1: '))
     let nota2 = Number(prompt('Informe a nota 2: '))
@@ -22,4 +22,24 @@ function exe0(){
     let media = soma/6
 
     // Mostra o resultado*/
+}
+function pesquisaSatisfacao(){
+    let nota
+    let conta = 1
+    let pessoaS = 0
+    let pessoaI = 0
+    let media = 0
+    let soma = 0
+    while(conta<=10){
+        nota = Number(prompt(`${conta}. De uma nota de satisfação entre 0 à 10:`))
+        soma = soma + nota
+        conta++
+        if(nota>=8){
+            pessoaS++
+        } else if(nota<5){
+            pessoaI++
+        }
+    }
+    media = soma / 10
+    alert(`A média das notas é ${media}, o total de pessoas satisfeitas é ${pessoaS} e o total de pessoas insatisfeitas é ${pessoaI}.`)
 }
